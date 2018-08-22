@@ -1,0 +1,29 @@
+{
+  "name": "react-native-action-cable-jwt",
+  "version": "1.0.0",
+  "description": "React Native with Action Cable and authentication JWT",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ilsonlasmar/react-native-action-cable-jwt.git"
+  },
+  "keywords": [
+    "react",
+    "native",
+    "action",
+    "cable",
+    "jwt"
+  ],
+  "author": "Ilson Lasmar <ilson.lasmar@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ilsonlasmar/react-native-action-cable-jwt/issues"
+  },
+  "homepage": "https://github.com/ilsonlasmar/react-native-action-cable-jwt#readme",
+  "dependencies": {
+    "actioncable": "5.2.0"
+  }
+}
