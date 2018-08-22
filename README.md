@@ -11,7 +11,7 @@ npm install --save react-native-action-cable-jwt
 ```
 
 ## USAGE
-```
+```jsx
 import ActionCableJwt from 'react-native-action-cable-jwt';
 import ActionCableLink from 'graphql-ruby-client/subscriptions/ActionCableLink';
 
