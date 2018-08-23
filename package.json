@@ -1,6 +1,6 @@
 {
   "name": "react-native-action-cable-jwt",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "React Native with Action Cable and authentication JWT",
   "main": "lib/index.js",
   "scripts": {
