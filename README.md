@@ -29,7 +29,8 @@ const webSocketLink = new ActionCableLink({ cable });
 
 ```
 
-#### Rails Graphql Channel (app/channels/graphql_channel.rb)
+#### Rails
+app/channels/graphql_channel.rb
 ```ruby
 class GraphqlChannel < ApplicationCable::Channel
   def subscribed    
@@ -86,7 +87,8 @@ end
 
 ```
 
-#### Rails Connection (app/channels/application_cable/connection.rb)
+#### Rails
+app/channels/application_cable/connection.rb
 ```ruby
 module ApplicationCable
   class Connection < ActionCable::Connection::Base
