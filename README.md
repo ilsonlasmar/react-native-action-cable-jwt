@@ -20,7 +20,7 @@ const url = 'http://YOUR_URL';
 
 const wsUri = `ws://${url}/cable`;
 const actionCableJwt = ActionCableJwt.createConnection(async () => {
-  const token = await AsyncStorage.getItem('@Sismages:token');
+  const token = await AsyncStorage.getItem('@token');
   return token;
 });
 const cable = actionCableJwt.createConsumer(wsUri);
@@ -85,8 +85,6 @@ class GraphqlChannel < ApplicationCable::Channel
 end
 
 ```
-
-#### Rails
 app/channels/application_cable/connection.rb
 ```ruby
 module ApplicationCable
