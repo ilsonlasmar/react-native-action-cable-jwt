@@ -17,19 +17,18 @@ import ActionCableJwt from 'react-native-action-cable-jwt';
 import ActionCableLink from 'graphql-ruby-client/subscriptions/ActionCableLink';
 
 const url = 'http://YOUR_URL';
-const token = await AsyncStorage.getItem('token');  
 
 const wsUri = `ws://${url}/cable`;
-const actionCableJwt = ActionCableJwt.createConnection(() => {
-  const jwt = token;
-  return jwt;
+const actionCableJwt = ActionCableJwt.createConnection(async () => {
+  const token = await AsyncStorage.getItem('@Sismages:token');
+  return token;
 });
 const cable = actionCableJwt.createConsumer(wsUri);
 const webSocketLink = new ActionCableLink({ cable });
 
 ```
 
-#### Rails
+#### Rails + GRAPHQL RUBY
 app/channels/graphql_channel.rb
 ```ruby
 class GraphqlChannel < ApplicationCable::Channel
