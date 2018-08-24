@@ -1,5 +1,5 @@
 # react-native-action-cable-jwt
-Compatible 100% Rails 5 + GRAPHQL RUBY ~> '1.8.5'
+Compatible 100% Rails 5 + GRAPHQL RUBY ~> '1.8.5' :smiley:
 
 Make your mobile application safer by avoiding to send tokens via url. Submit your jwt token from your application via the Action Cable header. 
 Why not send JWT tokens via URL? read more: https://bit.ly/2nZ4GbS
